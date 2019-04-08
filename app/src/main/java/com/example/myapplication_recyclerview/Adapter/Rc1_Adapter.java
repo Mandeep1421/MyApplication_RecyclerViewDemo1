@@ -32,9 +32,9 @@ public class Rc1_Adapter extends  RecyclerView.Adapter<Rc1_Adapter.Myviewholder>
     @Override
     public void onBindViewHolder(@NonNull Myviewholder myviewholder, int i) {
        Student stud = StudentList.get(i);
-        myviewholder.sid.setText(stud.getSid());
-        myviewholder.sname.setText(stud.getSname());
-        myviewholder.gender.setText(stud.getGender());
+        myviewholder.sid.setText("Student ID::"+stud.getSid());
+        myviewholder.sname.setText("Student Name::"+stud.getSname());
+        myviewholder.gender.setText("Gender::"+stud.getGender());
     }
 
     @Override
